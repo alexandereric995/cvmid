@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="icon" href="https://www.pngfind.com/images/lazy-bg.png">
+<link rel="icon" href="./terimakasihpdrm.ico">
 <head>
 
 	<meta charset="utf-8">
 
-	<link rel="stylesheet" type="text/css" href="css/mukadiat.css">
-
+	<link rel="stylesheet" type="text/css" href="css/brfv4_examples_theme.css">
 	<title>INDEX</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./net.css">
-<link rel="stylesheet" href="./net.color.css">
-<link rel="stylesheet" href="./font.net.css">
+
 	<script src="js/libs/createjs/preloadjs.min.js"></script>
-	<script src="js/kimakkari.js"></script>
-<head>
-   <script>
+	<script src="js/BRFv4Demo.js"></script>
+
+	<script>
+		window.onload = brfv4Example.start; //see js/BRFv4Demo.js
+	</script>
+
+</head>
+
+<body>  
+<script>
 var isNS = (navigator.appName == "Netscape") ? 1 : 0;
 if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
 function mischandler(){
@@ -30,26 +33,7 @@ document.oncontextmenu = mischandler;
 document.onmousedown = mousehandler;
 document.onmouseup = mousehandler;
 </script>
-  </head>
-<body>
-<header class="net-container net-theme net-padding" id="myHeader">
-  <i onclick="net_open()" class="fa fa-bars net-xlarge net-button net-theme"></i> 
-  <div class="net-center">
-  <h4>SECURITY GATEWAY 2.0</h4>
-  <h1 class="net-xxxlarge net-animate-bottom">GLOBAL SECURITY GATEWAY</h1>
-<center><img src="https://pngimage.net/wp-content/uploads/2018/06/logo-polis-png-3.png"></img></center>
-  <center><h4> #TerimaKasihPDRM | #SupportPDRM </h4></center>
-    <div class="net-padding-32"></div>
-  </div>
-</header>
-  <center><h1>Pengesahan Identiti</h1></center>
-<div class="buttons">
-    <div>
-        <center><input id="facing-mode" type="checkbox" value="1" checked>
-        <span><label for="facing-mode">Alih Kamera</label></span>
-          </div></center>
-    <div>
-	</div>
+	<h>TERIMA KASIH PDRM COMMUNITY 2.0</h>
 <div id="_wrapper">
 
 	<div id="_content">
@@ -61,7 +45,7 @@ document.onmouseup = mousehandler;
 		<canvas id="_drawing"></canvas>
 		<div id="_stats"></div>
 		<div id="_progressBar"></div>
-		<a href="https://www.rmp.gov.my/" target="_blank">
+		<a href="http://terimakasihpdrm.ml/" target="_blank">
 			<img id="_brfv4_logo" src="assets/brfv4_logo.png" alt="BRFv4 Logo"/>
 		</a>
 	</div>
@@ -69,7 +53,9 @@ document.onmouseup = mousehandler;
 	<div id="_subline"></div>
 	<div id="_highlight"><pre><code class="javascript" id="_gist"></code></pre></div>
 </div>
-	<div id="_settingsRight"></div>
-	</p>
+
+<div id="_settingsRight"></div>
+
 </body>
+
 </html>
