@@ -11,11 +11,11 @@
 	"use strict";
 
 	var urlMap = {
-		"Marcel":		"assets/brfv4_portrait_marcel.jpg",
-		"Chris":		"assets/brfv4_portrait_chris.jpg",
-		"woman old":	"assets/brfv4_woman_old.jpg",
-		"women young":	"assets/brfv4_women_young.jpg",
-		"Two Faces":	"assets/brfv4_two_faces.jpg"
+		"TIADA":		"assets/brfv4_portrait_marcel.jpg",
+		"TIADA DATA":		"assets/brfv4_portrait_chris.jpg",
+		"TIADA DATA":	"assets/brfv4_woman_old.jpg",
+		"TIADA DATA":	"assets/brfv4_women_young.jpg",
+		"TIADA DATA":	"assets/brfv4_two_faces.jpg"
 	};
 	var labels = [];
 	for (var key in urlMap) { labels.push(key); } // Fill in the labels.
