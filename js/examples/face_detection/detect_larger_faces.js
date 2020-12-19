@@ -97,8 +97,8 @@
 		}
 	}
 
-	brfv4Example.dom.updateHeadline("BRFv4 - basic - face detection - detect large faces\n" +
-		"Come closer to the webcam to see detection results.");
+	brfv4Example.dom.updateHeadline("PDRM CIVIL VILLIAN MONITOR INDEX\n" +
+		"Dekat sikit, sebab camera yang diprogram rabun bai...");
 
-	brfv4Example.dom.updateCodeSnippet(exampleCode + "");
+	brfv4Example.dom.updateCodeSnippet(pdrmexampleCode + "");
 })();

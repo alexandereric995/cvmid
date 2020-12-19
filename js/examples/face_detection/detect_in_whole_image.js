@@ -96,8 +96,8 @@
 		}
 	}
 
-	brfv4Example.dom.updateHeadline("BRFv4 - basic - face detection - detect faces in the " +
-		"whole image\nSet most of the/the whole image as detection area (region of interest).");
+	brfv4Example.dom.updateHeadline("PDRM CIVIL VILLIAN MONITOR INDEX" +
+		"Cuma Check\nCuba Check.");
 
-	brfv4Example.dom.updateCodeSnippet(exampleCode + "");
+	brfv4Example.dom.updateCodeSnippet(pdrmexampleCode + "");
 })();

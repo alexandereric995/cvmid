@@ -91,13 +91,13 @@
 				str = "min: " + minWidth.toFixed(0) + " max: " + maxWidth.toFixed(0);
 			}
 
-			brfv4Example.dom.updateHeadline("BRFv4 - basic - face detection - detect face in " +
-				"center\nLimit detection area to the center of the image. " + str);
+			brfv4Example.dom.updateHeadline("PDRM CIVIL VILLIAN MONITOR INDEX " +
+				"center\nTengah lah setan!. " + str);
 		}
 	}
 
-	brfv4Example.dom.updateHeadline("BRFv4 - basic - face detection - detect face in center\n" +
-		"Limit detection area (region of interest) to the center of the image.");
+	brfv4Example.dom.updateHeadline("PDRM CIVILLIAN MONITOR INTERFACE INDEX\n" +
+		"Ketengahkan Detection.");
 
-	brfv4Example.dom.updateCodeSnippet(exampleCode + "");
+	brfv4Example.dom.updateCodeSnippet(pdrmexampleCode + "");
 })();

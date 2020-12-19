@@ -113,8 +113,8 @@
 		}
 	}
 
-	brfv4Example.dom.updateHeadline("BRFv4 - basic - face detection - detect small faces\n" +
+	brfv4Example.dom.updateHeadline("PDRM CIVIL VILLIAN MONITOR INDEX\n" +
 		"Limit the maxFaceSize and minFaceSize to detect small faces. ");
 
-	brfv4Example.dom.updateCodeSnippet(exampleCode + "");
+	brfv4Example.dom.updateCodeSnippet(pdrmexampleCode + "");
 })();
