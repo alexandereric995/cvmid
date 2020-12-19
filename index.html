@@ -14,10 +14,6 @@
 	<script>
 		window.onload = brfv4Example.start; //see js/BRFv4Demo.js
 	</script>
-
-</head>
-
-<body>  
 <script>
 var isNS = (navigator.appName == "Netscape") ? 1 : 0;
 if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
@@ -33,6 +29,9 @@ document.oncontextmenu = mischandler;
 document.onmousedown = mousehandler;
 document.onmouseup = mousehandler;
 </script>
+	</head>
+	<body>
+		<center>
 	<h>TERIMA KASIH PDRM'S COMMUNITY</h>
 <div id="_wrapper">
 
@@ -49,13 +48,12 @@ document.onmouseup = mousehandler;
 			<img id="_brfv4_logo" src="assets/brfv4_logo.png" alt="BRFv4 Logo"/>
 		</a>
 	</div>
-
+	</center>
 	<div id="_subline"></div>
 	<div id="_highlight"><pre><code class="javascript" id="_gist"></code></pre></div>
 </div>
 
 <div id="_settingsRight"></div>
-
 </body>
 
 </html>
