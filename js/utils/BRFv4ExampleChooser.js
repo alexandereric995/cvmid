@@ -5,25 +5,25 @@
 
 	var urlMap 	= {
 
-		"[BS TERIMAKASIHPDRM IDENTITY DETECTION]":						null,
+		"TERIMAKASIHPDRM COMMUNITY SYSTEM":						null,
 
 		"basic - face detection - detect in whole image":		"js/examples/face_detection/detect_in_whole_image.js",
 		"basic - face detection - detect in center":			"js/examples/face_detection/detect_in_center.js",
 		"basic - face detection - detect smaller faces":		"js/examples/face_detection/detect_smaller_faces.js",
 		"basic - face detection - detect larger faces":			"js/examples/face_detection/detect_larger_faces.js",
 
-		"[BS TERIMAKASIHPDRM IDENTITY DETECTION]":						null,
+		"TERIMAKASIHPDRM COMMUNITY SYSTEM":						null,
 
 		"basic - face tracking - track single face":			"js/examples/face_tracking/track_single_face.js",
 		"basic - face tracking - track multiple faces":			"js/examples/face_tracking/track_multiple_faces.js",
 		"basic - face tracking - candide overlay":				"js/examples/face_tracking/candide_overlay.js",
 
-		"[BS TERIMAKASIHPDRM IDENTITY DETECTION]":						null,
+		"TERIMAKASIHPDRM COMMUNITY SYSTEM":						null,
 
 		"basic - point tracking - track multiple points":		"js/examples/point_tracking/track_multiple_points.js",
 		"basic - point tracking - track points and face":		"js/examples/point_tracking/track_points_and_face.js",
 
-		"[INT TERIMAKASIHPDRM IDENTITY DETECTION]":					null,
+		"TERIMAKASIHPDRM COMMUNITY SYSTEM":					null,
 
 		"intermediate - face tracking - restrict to center":	"js/examples/face_tracking/restrict_to_center.js",
 		"intermediate - face tracking - extended face":			["js/utils/BRFv4ExtendedFace.js", "js/examples/face_tracking/extended_face_shape.js"],
@@ -32,7 +32,7 @@
 		"intermediate - face tracking - png/mask overlay":		"js/examples/face_tracking/png_mask_overlay.js",
 		"intermediate - face tracking - color libs":			"js/examples/face_tracking/color_libs.js",
 
-		"[ADV TERIMAKASIHPDRM IDENTITY DETECTION]":						null,
+		"TERIMAKASIHPDRM COMMUNITY SYSTEM":						null,
 
 		"advanced - face tracking - blink detection":			"js/examples/face_tracking/blink_detection.js",
     "advanced - face tracking - blink detection center":			"js/examples/face_tracking/blink_detection_center.js",
@@ -74,9 +74,9 @@
 		brfv4Example.gui.exampleChooser = QuickSettings.create(
 			2, 2, "Example Chooser", brfv4Example.dom.createDiv("_settingsRight"))
 			.setWidth(250)
-			.addHTML("Switch between examples", "Pilih lah sendiri.").hideTitle("Switch between examples")
-			.addDropDown("_Jenis", labels, onJenisFaceID)
-			.hideTitle("_Jenis")
+			.addHTML("Switch between examples", "Which example do you want to try? Use the drop down to choose another example.").hideTitle("Switch between examples")
+			.addDropDown("_example", labels, onExampleChosen)
+			.hideTitle("_example")
 			.setValuesFromJSON({ "_example": 6}); // "basic - face tracking - track single face"
 
 		_isFirstSelect = false;
