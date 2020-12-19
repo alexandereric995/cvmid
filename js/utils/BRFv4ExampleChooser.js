@@ -7,38 +7,38 @@
 
 		"TERIMAKASIHPDRM COMMUNITY SYSTEM":						null,
 
-		"basic - face detection - menyeluruh":		"js/examples/face_detection/detect_in_whole_image.js",
-		"basic - face detection - tengah":			"js/examples/face_detection/detect_in_center.js",
-		"basic - face detection - wajah kecil":		"js/examples/face_detection/detect_smaller_faces.js",
-		"basic - face detection - wajah besar":			"js/examples/face_detection/detect_larger_faces.js",
+		"ASAS - face detection - menyeluruh":		"js/examples/face_detection/detect_in_whole_image.js",
+		"ASAS - face detection - tengah":			"js/examples/face_detection/detect_in_center.js",
+		"ASAS - face detection - wajah kecil":		"js/examples/face_detection/detect_smaller_faces.js",
+		"ASAS - face detection - wajah besar":			"js/examples/face_detection/detect_larger_faces.js",
 
 		"TERIMAKASIHPDRM COMMUNITY SYSTEM":						null,
 
-		"basic - face tracking - track Satu Wajah":			"js/examples/face_tracking/track_single_face.js",
-		"basic - face tracking - track Banyak faces":			"js/examples/face_tracking/track_multiple_faces.js",
-		"basic - face tracking - Kenseluruhan overlay":				"js/examples/face_tracking/candide_overlay.js",
+		"ASAS - face tracking - track Satu Wajah":			"js/examples/face_tracking/track_single_face.js",
+		"ASAS - face tracking - track Banyak faces":			"js/examples/face_tracking/track_multiple_faces.js",
+		"ASAS - face tracking - Kenseluruhan overlay":				"js/examples/face_tracking/candide_overlay.js",
 
 		"TERIMAKASIHPDRM COMMUNITY SYSTEM":						null,
 
-		"basic - point tracking - track MultiPoint":		"js/examples/point_tracking/track_multiple_points.js",
-		"basic - point tracking - track Point Dan Muka":		"js/examples/point_tracking/track_points_and_face.js",
+		"ASAS - point tracking - track MultiPoint":		"js/examples/point_tracking/track_multiple_points.js",
+		"ASAS - point tracking - track Point Dan Muka":		"js/examples/point_tracking/track_points_and_face.js",
 
 		"TERIMAKASIHPDRM COMMUNITY SYSTEM":					null,
 
-		"intermediate - face tracking - hanya Tengah":	"js/examples/face_tracking/restrict_to_center.js",
-		"intermediate - face tracking - lebihan face":			["js/utils/BRFv4ExtendedFace.js", "js/examples/face_tracking/extended_face_shape.js"],
-		"intermediate - face tracking - Senyum":		"js/examples/face_tracking/smile_detection.js",
-		"intermediate - face tracking - Menguap":		"js/examples/face_tracking/yawn_detection.js",
-		"intermediate - face tracking - png/mask overlay":		"js/examples/face_tracking/png_mask_overlay.js",
-		"intermediate - face tracking - Warna Bibir":			"js/examples/face_tracking/color_libs.js",
+		"ID - face tracking - hanya Tengah":	"js/examples/face_tracking/restrict_to_center.js",
+		"ID - face tracking - lebihan face":			["js/utils/BRFv4ExtendedFace.js", "js/examples/face_tracking/extended_face_shape.js"],
+		"ID - face tracking - Senyum":		"js/examples/face_tracking/smile_detection.js",
+		"ID - face tracking - Menguap":		"js/examples/face_tracking/yawn_detection.js",
+		"ID - face tracking - png/mask overlay":		"js/examples/face_tracking/png_mask_overlay.js",
+		"ID - face tracking - Warna Bibir":			"js/examples/face_tracking/color_libs.js",
 
 		"TERIMAKASIHPDRM COMMUNITY SYSTEM":						null,
 
-		"advanced - face tracking - detect Blink":			"js/examples/face_tracking/blink_detection.js",
-    "advanced - face tracking - ke tengah blink":			"js/examples/face_tracking/blink_detection_center.js",
-		"advanced - face tracking - Ketiga":			"js/examples/face_tracking/ThreeJS_example.js",
-		"advanced - face tracking - warna kulit overlay":		["assets/brfv4_face_textures.js", "js/examples/face_tracking/face_texture_overlay.js"],
-		"advanced - face tracking - swap muka (dua wajah)":		"js/examples/face_tracking/face_swap_two_faces.js"
+		"ADV- face tracking - detect Blink":			"js/examples/face_tracking/blink_detection.js",
+    "ADV - face tracking - ke tengah blink":			"js/examples/face_tracking/blink_detection_center.js",
+		"ADV - face tracking - Ketiga":			"js/examples/face_tracking/ThreeJS_example.js",
+		"ADV - face tracking - warna kulit overlay":		["assets/brfv4_face_textures.js", "js/examples/face_tracking/face_texture_overlay.js"],
+		"ADV - face tracking - swap muka (dua wajah)":		"js/examples/face_tracking/face_swap_two_faces.js"
 	};
 	var labels = [];
 	for (var key in urlMap) { labels.push(key); } // Fill in the labels.
