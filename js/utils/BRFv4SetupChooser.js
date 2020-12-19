@@ -19,10 +19,10 @@
 		QuickSettings.useExtStyleSheet();
 
 		brfv4Example.gui.setupChooser = QuickSettings.create(
-			2, 115, "Pilih Sendiri", brfv4Example.dom.createDiv("_settingsRight"))
+			2, 115, "Setup Chooser", brfv4Example.dom.createDiv("_settingsRight"))
 			.setWidth(250)
-			.addHTML("Pilih Sendiri", "Kenal Pasti Menggunakan kaedah upload atau live?<br/><br/>Sembang arr...")
-			.addDropDown("_pilih", labels, onpilihSendiri)
-			.hideTitle("_pilih").hideTitle("Switch between setups");
+			.addHTML("Switch between setups", "Pilih untuk live atau upload imej.<br/><br/>Pastikan setup untuk kamera dibenarkan pada browser atau software lain.")
+			.addDropDown("_setup", labels, onSetupChosen)
+			.hideTitle("_setup").hideTitle("Switch between setups");
 	}
 })();
