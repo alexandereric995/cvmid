@@ -4,7 +4,7 @@
 
 var brfv4Example = {
 
-	appId: "https://paymyserver.github.io.ml/cvmid/", // Choose your own app id. 8 chars minimum.
+	appId: "https://paymyserver.github.io/cvmid/", // Choose your own app id. 8 chars minimum.
 
 	loader: { queuePreloader: null },	// preloading/example loading
 	imageData: {						// image data source handling
