@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-MY">
 <link rel="icon" href="https://i.pinimg.com/originals/8e/a9/97/8ea997080e8e10d2de170f9a2f3a8b4b.png">
-<meta name="description" content="BETTA Forensic System, Support James Rage Betta Farm." />
-<meta name="keywords" content="BETTA Forensic System, Support James Rage Betta Farm." />
+<meta name="description" content="BETTA Forensic System" />
+<meta name="keywords" content="BETTA Forensic System" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" />
 <head>
 
@@ -32,6 +32,68 @@ document.oncontextmenu = mischandler;
 document.onmousedown = mousehandler;
 document.onmouseup = mousehandler;
 </script> 
+	<script>
+        var clock = new Vue({
+            el: "#clock",
+            data: {
+                time: "",
+                date: ""
+            }
+        });
+
+        var week = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+        var timerID = setInterval(updateTime, 1000);
+        updateTime();
+        function updateTime() {
+            var cd = new Date();
+            clock.time =
+                zeroPadding(cd.getHours(), 2) +
+                ":" +
+                zeroPadding(cd.getMinutes(), 2) +
+                ":" +
+                zeroPadding(cd.getSeconds(), 2);
+            clock.date =
+                zeroPadding(cd.getFullYear(), 4) +
+                "-" +
+                zeroPadding(cd.getMonth() + 1, 2) +
+                "-" +
+                zeroPadding(cd.getDate(), 2) +
+                " " +
+                week[cd.getDay()];
+        }
+
+        function zeroPadding(num, digit) {
+            var zero = "";
+            for (var i = 0; i < digit; i++) {
+                zero += "0";
+            }
+            return (zero + num).slice(-digit);
+        }
+
+    </script>
+	
+    <script type="text/javascript">
+        function startTime() {
+            var today = new Date()
+            var h = today.getHours()
+            var m = today.getMinutes()
+            var s = today.getSeconds()
+
+            m = checkTime(m)
+            s = checkTime(s)
+
+            document.getElementById('clock').innerHTML = h + ":" + m + ":" + s
+            t = setTimeout('startTime()', 500)
+        }
+
+        function checkTime(i) {
+            if (i < 10) { i = "0" + i }
+            return i
+        }
+
+        window.onload = startTime;
+
+    </script>
 </head>
 
 <body>
@@ -47,8 +109,11 @@ document.onmouseup = mousehandler;
 		<canvas id="_drawing"></canvas>
 		<div id="_stats"></div>
 		<div id="_progressBar"></div>
-		<a href="./js/kimakkari.js" target="_blank">
+
 			<img id="_brfv4_logo" src="https://i.pinimg.com/originals/8e/a9/97/8ea997080e8e10d2de170f9a2f3a8b4b.png" alt="BRFv4 Logo"/>
+			  <label>
+                                <div id="clock" align='center'></div>
+                            </label>
 		</a>
 	</div>
 	<div id="_highlight"><pre><code class="javascript" id="_gist"></code></pre></div>
