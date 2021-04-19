@@ -1,20 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-<link rel="icon" href="./favicon.ico">
+<html lang="en-MY">
+<link rel="icon" href="https://i.pinimg.com/originals/8e/a9/97/8ea997080e8e10d2de170f9a2f3a8b4b.png">
+<meta name="description" content="BETTA Forensic System, Support James Rage Betta Farm." />
+<meta name="keywords" content="BETTA Forensic System, Support James Rage Betta Farm." />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" />
 <head>
 
 	<meta charset="utf-8">
 
-	<link rel="stylesheet" type="text/css" href="css/brfv4_examples_theme.css">
-	<title>MDEC CIVILLIAN</title>
+	<link rel="stylesheet" type="text/css" href="css/mukadiat.css">
+	<title>INDEX</title>
 
 	<script src="js/libs/createjs/preloadjs.min.js"></script>
-	<script src="js/BRFv4Demo.js"></script>
+	<script src="js/kimakkari.js"></script>
 
 	<script>
-		window.onload = brfv4Example.start; //see js/BRFv4Demo.js
+		window.onload = brfv4Example.start; //see js/kimakkari.js
 	</script>
-
+<script>
+var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+function mischandler(){
+return false;
+}
+function mousehandler(e){
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if((eventbutton==2)||(eventbutton==3)) return false;
+}
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+</script> 
 </head>
 
 <body>
@@ -30,12 +47,10 @@
 		<canvas id="_drawing"></canvas>
 		<div id="_stats"></div>
 		<div id="_progressBar"></div>
-		<a href="http://mdec.my/" target="_blank">
-			<img id="_brfv4_logo" src="assets/brfv4_logo.png" alt="BRFv4 Logo"/>
+		<a href="./js/kimakkari.js" target="_blank">
+			<img id="_brfv4_logo" src="https://i.pinimg.com/originals/8e/a9/97/8ea997080e8e10d2de170f9a2f3a8b4b.png" alt="BRFv4 Logo"/>
 		</a>
 	</div>
-
-	<div id="_subline"></div>
 	<div id="_highlight"><pre><code class="javascript" id="_gist"></code></pre></div>
 </div>
 
